@@ -235,11 +235,15 @@ nav a:hover {
 }
 
 .profile-img {
-  transform: none;
-  margin: 0 auto;
-  position: static;
-  display: block;
-  width: 80%;
+  position: absolute;
+  margin-left:-146px;
+  top: 180px;
+  width: 360px;
+  transform: translateX(-240px);
+  -webkit-transform: translateX(-240px);
+  -moz-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  -o-transform: translateX(-240px);
   z-index:3;
 }
 
