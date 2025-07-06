@@ -23,7 +23,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 108vh; 
+  height: auto;
 }
 
 nav {
