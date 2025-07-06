@@ -5,15 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 576px) {
-  .main-content h1,
-  .main-content h2,
-  .main-content h3 {
-    margin-left: 0;
-    font-size: 32px;
-    text-align: center;
-  }
-
 .section {
   height: 100vh;
   background-size: cover;
@@ -32,8 +23,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vh;
+  min-height: 108vh; 
 }
 
 nav {
@@ -145,7 +135,7 @@ nav a:hover {
   color: #ffffff;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .sidebar {
     flex-direction: row;
     position: fixed;
@@ -175,8 +165,8 @@ nav a:hover {
   position: relative;
   text-align: center;
   margin-top: -40px;
-  margin-left: 0px;
-  font-size: 36px;
+  margin-left: 210px;
+  font-size: 154px;
   font-weight: 700;
   z-index: 2;
 
@@ -248,7 +238,7 @@ nav a:hover {
   z-index:3;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .main-content h1 {
     font-size: 36px;
   }
@@ -552,7 +542,7 @@ nav a:hover {
 }
 
 .experience-section {
-  background-image: url('img/bg\ section\ 4.jpg'); 
+  background-image: url('img/bg\ section\ 4.jpg'); /* Ganti path kalau perlu */
   background-size: cover;
   background-position: center;
   padding: 60px 40px;
@@ -912,7 +902,7 @@ nav a:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-box {
     flex-direction: column;
   }
@@ -987,18 +977,4 @@ footer hr {
   border-top: 1px solid #444;
   width: 90%;
   margin: 0 auto;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  max-width: 100vw;
-}
-
+} 
