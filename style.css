@@ -978,3 +978,189 @@ footer hr {
   width: 90%;
   margin: 0 auto;
 }
+
+/* ✅ CSS RESPONSIVE FIX UNTUK ALMA - VERSI MULTI DEVICE */
+
+/* HP kecil: iPhone SE, Android mini */
+@media (max-width: 576px) {
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .experience-title,
+  .timeline {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+    transform: none;
+  }
+
+  .profile-img {
+    transform: none;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    position: static;
+  }
+
+  .sidebar,
+  .sidebar ul {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    background-color: #0F103F;
+    border-radius: 0;
+    z-index: 9999;
+    padding: 10px 0;
+  }
+
+  .sidebar ul li {
+    width: auto;
+  }
+
+  .sidebar ul li a {
+    font-size: 14px;
+    margin-top: 0;
+    padding: 10px 16px;
+    color: white;
+  }
+
+  .gear-bg,
+  .gear1,
+  .gear2,
+  .gear3 {
+    display: none;
+  }
+
+  .section-home,
+  .section-about,
+  .skills-section,
+  .work-section,
+  .experience-section,
+  .contact-section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .timeline {
+    padding-left: 20px;
+    margin: 0;
+  }
+}
+
+/* HP + Tablet (umum) */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .main-content h1 {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .main-content h2,
+  .main-content h3 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profile-img {
+    transform: none;
+    margin: 0 auto;
+    position: static;
+    width: 80%;
+    display: block;
+  }
+
+  .timeline {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+
+  .gear-bg,
+  .gear1,
+  .gear2,
+  .gear3 {
+    display: none;
+  }
+
+  .sidebar ul {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    background: #0F103F;
+    border-radius: 0;
+    z-index: 9999;
+    padding: 10px 0;
+  }
+
+  .sidebar ul li {
+    width: auto;
+  }
+
+  .sidebar ul li a {
+    font-size: 18px;
+    margin-top: 0;
+    padding: 10px 16px;
+    color: white;
+  }
+
+  .about-container,
+  .contact-box,
+  .skills-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .cv-btn,
+  .contact-form button {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .work-container {
+    height: auto;
+  }
+
+  .work-card {
+    position: static;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .footer-nav,
+  .footer-social {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Layar desktop gede (opsional) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
