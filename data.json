@@ -1,0 +1,33 @@
+{
+  "iso-drawing": [
+    {
+      "title": "isi judul project",
+      "images": [
+        "img_iso drawing/up gambar di folder img_iso drawing lalu ketik nama filenya disini"
+        
+      ],
+      "description": "isi deskripsi project"
+    }
+  ],
+  "3d-model": [
+    {
+              "title": "isi judul project",
+      "images": [
+        "img_iso drawing/up gambar di folder img_iso drawing lalu ketik nama filenya disini"
+        
+      ],
+      "description": "isi deskripsi project"
+    }
+  ],
+  "exploded-assembly": [
+    {
+              "title": "isi judul project",
+      "images": [
+        "img_iso drawing/up gambar di folder img_iso drawing lalu ketik nama filenya disini"
+        
+      ],
+      "description": "isi deskripsi project"
+
+    }
+  ]
+}

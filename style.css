@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot, .dot-yellow, .dotblack {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+  transition: background-color 0.3s ease;
+}
+
+.dot {
+  background-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+
+.dotblack {
+  background-color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+
+.dot.active {
+  background-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+
+.dot-yellow {
+  background-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.hero-image {
+  margin-right: auto;
+  margin-top: -150px; /* Dorong gambar ke atas */
+}
+
+.hero-text {
+  margin-left: auto;
+  text-align: left;
+}
+
+.hero-image img {
+  width: 450px;
+  height: auto;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: -100px; /* Dorong teks ke atas */
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -545px; /* Margin negatif sesuai request */
+  gap: 10px;
+  background-color: #b1b2b4;
+  color: white;
+  width: 100vw; /* Full viewport width */
+  height: 80px;
+  padding: 0 200px 0 500px; /* Padding sesuai request */
+  box-sizing: border-box;
+  position: relative;
+  z-index: -1; /* Keep z-index negatif */
+  box-shadow: 0 5px 15px rgb(133, 133, 133);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  margin-top: -182px; /* Margin negatif sesuai request */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 3.0);
+}
+
+section.about {
+  padding: 40px 20px;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+section.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section.about p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.line-break {
+  border: none;
+  border-top: 2px solid #838282;
+  margin: 20px 0;
+}
+
+.about-text strong {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.highlight {
+  background-color: yellow;
+  padding: 0 5px;
+}
+
+.btn-blue {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 70px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.about-text {
+  flex: 2;
+  max-width: 100%;
+  margin-left: -20px; /* Margin negatif sesuai request */
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foto-about {
+  width: 500px;
+  margin-right: -100px; /* Margin negatif sesuai request */
+  border-radius: 10px;
+  margin-top: -40px; /* Margin negatif sesuai request */
+}
+
+.slanted-section {
+  position: relative;
+  background: #000;
+  height: 0px;
+  z-index: 1;
+}
+
+.slanted-section::before {
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: inherit;
+  transform: skewY(-8deg);
+  z-index: -1;
+  -webkit-transform: skewY(-8deg);
+  -moz-transform: skewY(-8deg);
+  -ms-transform: skewY(-8deg);
+  -o-transform: skewY(-8deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0);
+}
+
+.dotsbottom {
+  margin-left: 900px;
+  margin-top: -60px;
+}
+
+.dotsbottom .dot {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 2.0);
+}
